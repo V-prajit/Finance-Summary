@@ -12,14 +12,14 @@ function App() {
     const formData = new FormData();
     formData.append("file", file);
 
-    fetch('http://localhost:3000/upload', {
+    fetch('http://localhost:3000/upload/', {
       method: 'POST',
       body: formData,
     })
     .then(response => response.json())
     .then(data => {
       if (data.error) {
-        alert('Error: '+data.error);
+        alert('Error: '+ data.error);
       }
       else {
         alert('Success: ' + data.message);
