@@ -84,10 +84,10 @@ WSGI_APPLICATION = 'financetracker.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv('DATABASE_NAME'),
-        "USER": os.getenv('DATABASE_USER'),
-        "PASSWORD": os.getenv('DATABASE_PASSWORD'),
-        "HOST": os.getenv('DATABASE_HOST'),
+        "NAME": os.getenv('DATABASE_NAME', 'financetracker'),
+        "USER": os.getenv('DATABASE_USER', 'financetracker'),
+        "PASSWORD": os.getenv('DATABASE_PASSWORD', 'random'),
+        "HOST": os.getenv('DATABASE_HOST', 'db'),
         "PORT": "5432",
     }
 }

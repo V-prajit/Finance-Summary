@@ -6,10 +6,10 @@ services:
       - postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: financetracker
-      POSTGRES_USER: root
+      POSTGRES_USER: financetracker
       POSTGRES_PASSWORD: random
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U root"]
+      test: ["CMD-SHELL", "pg_isready -U financetracker"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -31,7 +31,7 @@ services:
     environment:
       DATABASE_HOST: db
       DATABASE_NAME: financetracker
-      DATABASE_USER: root
+      DATABASE_USER: financetracker
       DATABASE_PASSWORD: random
     networks:
       - financetracker-network
