@@ -5,7 +5,6 @@ const backendUrl = 'http://localhost:3000';
 
 function App() {
   const [file, setFile] = useState(null);
-  const [getResponse, setGetResponse] = useState(null);
 
   const onFileChange = event => {
     setFile(event.target.files[0]);
@@ -25,23 +24,11 @@ function App() {
         alert('Error: '+ data.error);
       }
       else {
-        alert('Success: ' + data.message);
+        alert('Success: ' + data.message +' ' + data.transactions_added + ' ' + data.errors + ' ' + data.duplicates);
       }
     })
     .catch(error => alert('Error uploading file: '+error));
   };
-
-  const testGetRequest = () => {
-    fetch(`${backendUrl}/test/`, {
-      method: 'GET',
-    })
-    .then(response => response.text())
-    .then(data => {
-      setGetResponse(data);
-    })
-    .catch(error => alert('Error with GET request: ' + error));
-  };
-
 
   return (
     <div>
@@ -50,16 +37,6 @@ function App() {
       <button onClick={onFileUpload}>
         Upload!
       </button>
-      <br /><br />
-      <button onClick={testGetRequest}>
-        Test GET Request
-      </button>
-      {getResponse && (
-        <div>
-          <h2>GET Response:</h2>
-          <p>{getResponse}</p>
-        </div>
-      )}
     </div>
   );
 }

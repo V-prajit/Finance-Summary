@@ -1,2 +1,4 @@
 
 *.csv
+/backend/financetracker/__pycache__
+/backend/storage/__pycache__

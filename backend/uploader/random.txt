@@ -1,0 +1,325 @@
+2433 DEBIT 2024-06-10 apple.com/bill 866-712-7753 ca               06/10 -12.98 DEBIT_CARD 294.23 
+2434 CREDIT 2024-06-10 zelle payment from atharv arya 21033570494 107.00 QUICKPAY_CREDIT 307.21 
+2435 DEBIT 2024-06-07 online transfer to sav ...1178 transaction#: 21032286819 06/07 -100.00 ACCT_XFER 200.21 
+2436 CREDIT 2024-06-07 zelle payment from shashank yaji 21030392028 151.30 QUICKPAY_CREDIT 300.21 
+2437 DEBIT 2024-06-03 apple.com/bill 866-712-7753 ca               06/02 -0.99 DEBIT_CARD 148.91 
+2438 CREDIT 2024-06-03 zelle payment from venkata tubati bacqled2cqfw 16.00 PARTNERFI_TO_CHASE 149.90 
+2439 DEBIT 2024-05-29 openai *chatgpt subs httpsopenai.c ca        05/29 -21.28 DEBIT_CARD 133.90 
+2440 CREDIT 2024-05-29 zelle payment from yash ajariwal 20916582962 17.09 QUICKPAY_CREDIT 155.18 
+2441 CREDIT 2024-05-28 zelle payment from shashank yaji 20602107311 10.64 QUICKPAY_CREDIT 138.09 
+2442 DEBIT 2024-05-20 foreign exchange rate adjustment fee         05/19centro ko -1.33 FEE_TRANSACTION 127.45 
+2443 DEBIT 2024-05-20 foreign exchange rate adjustment fee         05/19aditya bi -3.02 FEE_TRANSACTION 128.78 
+2444 DEBIT 2024-05-20 aditya birla fashion an hyderabad            05/19 in rupee   8397.00 x 0.01201143 (exchg rte) -100.86 DEBIT_CARD 131.80 
+2445 DEBIT 2024-05-20 centro kompally hyderabad                    05/19 in rupee   3717.00 x 0.01200969 (exchg rte) -44.64 DEBIT_CARD 232.66 
+2446 DEBIT 2024-05-13 foreign exchange rate adjustment fee         05/11autogrill -0.22 FEE_TRANSACTION 277.30 
+2447 DEBIT 2024-05-13 foreign exchange rate adjustment fee         05/11autogrill -0.37 FEE_TRANSACTION 277.52 
+2448 DEBIT 2024-05-13 foreign exchange rate adjustment fee         05/12westside -1.04 FEE_TRANSACTION 277.89 
+2449 DEBIT 2024-05-13 westside unit of trent hyderabad             05/12 in rupee   2912.00 x 0.01198489 (exchg rte) -34.90 DEBIT_CARD 278.93 
+2450 DEBIT 2024-05-13 autogrillmiddleeastllc dubai                 05/11 ae dirham  27.82 x 0.2724659 (exchg rte) -7.58 DEBIT_CARD 313.83 
+2451 DEBIT 2024-05-13 autogrillmiddleeastllc dubai                 05/11 ae dirham  46.00 x 0.2723913 (exchg rte) -12.53 DEBIT_CARD 321.41 
+2452 DEBIT 2024-05-13 494pepsiven9147678600 mesquite tx            05/09 -2.25 DEBIT_CARD 333.94 
+2453 CREDIT 2024-05-13 zelle payment from kabir puri 20745589032 4.00 QUICKPAY_CREDIT 336.19 
+2454 CREDIT 2024-05-13 zelle payment from akilan ramasamy wfct0s7yb3n2 20.00 PARTNERFI_TO_CHASE 332.19 
+2455 DEBIT 2024-05-10 zelle payment to ujjwal jpm99agueou2 -9.00 CHASE_TO_PARTNERFI 312.19 
+2456 DEBIT 2024-05-10 qt 859 arlington tx                          05/09 -8.70 DEBIT_CARD 321.19 
+2457 CREDIT 2024-05-10 paypal           transfer                   ppd id: paypalsd11 4.75 MISC_CREDIT 329.89 
+2458 CREDIT 2024-05-10 paypal           transfer                   ppd id: paypalsd11 6.50 MISC_CREDIT 325.14 
+2459 DEBIT 2024-05-09 zelle payment to shanil jpm99agtfg1q -21.30 CHASE_TO_PARTNERFI 318.64 
+2460 DEBIT 2024-05-09 taco bell 735428 arlington tx                05/08 -33.78 DEBIT_CARD 339.94 
+2461 CREDIT 2024-05-09 zelle payment from shashank yaji 20724009929 250.00 QUICKPAY_CREDIT 373.72 
+2462 DEBIT 2024-05-08 210 braums store arlington tx                05/07 -4.75 DEBIT_CARD 123.72 
+2463 DEBIT 2024-05-08 daves hot chicken 1093 arlington tx          05/07 -5.40 DEBIT_CARD 128.47 
+2464 DEBIT 2024-05-08 daves hot chicken 1093 arlington tx          05/07 -21.82 DEBIT_CARD 133.87 
+2465 DEBIT 2024-05-07 wal-mart super center arlington tx           05/07 -9.66 DEBIT_CARD 155.69 
+2466 DEBIT 2024-05-06 zelle payment to akshay bhaiya jpm99agmw6ad -170.00 CHASE_TO_PARTNERFI 165.35 
+2467 DEBIT 2024-05-06 zelle payment to akshay bhaiya jpm99agms1op -1.00 CHASE_TO_PARTNERFI 335.35 
+2468 DEBIT 2024-05-06 zelle payment to shashank 20689453062 -400.00 QUICKPAY_DEBIT 336.35 
+2469 DEBIT 2024-05-06 wm superc wal-mart sup arlington tx          05/05 -45.78 DEBIT_CARD 736.35 
+2470 DEBIT 2024-05-06 zelle payment to random3 jpm99aglvx0n -150.00 CHASE_TO_PARTNERFI 782.13 
+2471 DEBIT 2024-05-06 zelle payment to logan jpm99agls8na -30.00 CHASE_TO_PARTNERFI 932.13 
+2472 DEBIT 2024-05-06 uta market cafe arlington tx                 05/03 -22.71 DEBIT_CARD 962.13 
+2473 CREDIT 2024-05-06 zelle payment from akshay gadodia baciuivkldsg 27.06 PARTNERFI_TO_CHASE 984.84 
+2474 CREDIT 2024-05-06 online transfer from sav ...1178 transaction#: 20685724740 100.00 ACCT_XFER 957.78 
+2475 CREDIT 2024-05-06 online transfer from sav ...1178 transaction#: 20688993431 300.00 ACCT_XFER 857.78 
+2476 CREDIT 2024-05-06 online transfer from sav ...1178 transaction#: 20689477996 400.00 ACCT_XFER 557.78 
+2477 DEBIT 2024-05-03 zelle payment to shashank 20671046378 -15.00 QUICKPAY_DEBIT 157.78 
+2478 DEBIT 2024-05-03 apple.com/bill 866-712-7753 ca               05/02 -0.99 DEBIT_CARD 172.78 
+2479 CREDIT 2024-05-03 paypal           transfer                   ppd id: paypalsd11 86.00 MISC_CREDIT 173.77 
+2480 DEBIT 2024-05-02 zelle payment to shashank 20653410561 -6.88 QUICKPAY_DEBIT 87.77 
+2481 DEBIT 2024-05-02 bethany cafe arlington tx                    04/30 -6.00 DEBIT_CARD 94.65 
+2482 DEBIT 2024-05-01 wal-mart #0880 irving tx                     05/01 purchase $21.63 cash back $80.00 -101.63 DEBIT_CARD 100.65 
+2483 DEBIT 2024-04-30 qt 994 irving tx                             04/29 -3.56 DEBIT_CARD 202.28 
+2484 DEBIT 2024-04-30 kwality icecream irving tx                   04/28 -14.15 DEBIT_CARD 205.84 
+2485 DEBIT 2024-04-29 zelle payment to shashank 20614418635 -18.42 QUICKPAY_DEBIT 219.99 
+2486 DEBIT 2024-04-29 tst* india 101 irving tx                     04/28 -199.10 DEBIT_CARD 238.41 
+2487 DEBIT 2024-04-29 chatgpt subscription httpsopenai.c ca        04/29 -21.28 DEBIT_CARD 437.51 
+2488 DEBIT 2024-04-29 zelle payment to kabir 20599423664 -15.00 QUICKPAY_DEBIT 458.79 
+2489 DEBIT 2024-04-29 steamgames.com 4259522 425-8899642 wa        04/27 -8.11 DEBIT_CARD 473.79 
+2490 CREDIT 2024-04-29 zelle payment from shashank yaji 20283305517 10.64 QUICKPAY_CREDIT 481.90 
+2491 CREDIT 2024-04-29 zelle payment from siddharth shivaji murkute 20607886762 15.00 QUICKPAY_CREDIT 471.26 
+2492 CREDIT 2024-04-29 zelle payment from atharv arya 20607886047 15.00 QUICKPAY_CREDIT 456.26 
+2493 CREDIT 2024-04-29 zelle payment from deepesh bhatia 20607876330 15.00 QUICKPAY_CREDIT 441.26 
+2494 CREDIT 2024-04-29 zelle payment from vikash mall 20607870742 75.00 QUICKPAY_CREDIT 426.26 
+2495 CREDIT 2024-04-29 online transfer from sav ...1178 transaction#: 20607842208 250.00 ACCT_XFER 351.26 
+2496 DEBIT 2024-04-26 privateinternetacces www.privatein co        04/25 -60.70 DEBIT_CARD 101.26 
+2497 CREDIT 2024-04-26 online transfer from sav ...1178 transaction#: 20585731879 68.00 ACCT_XFER 161.96 
+2498 DEBIT 2024-04-25 desi indian grocery arlington tx             04/23 -10.23 DEBIT_CARD 93.96 
+2499 CREDIT 2024-04-24 zelle payment from shashank yaji 20566576255 12.00 QUICKPAY_CREDIT 104.19 
+2500 CREDIT 2024-04-23 reversal: amc 0158 arlington 18 arlington tx           04/19  claimid: 704953642310001 12.98 ATM 92.19 
+2501 DEBIT 2024-04-22 fiv*rocketbelly arlington tx                 04/21 -8.12 DEBIT_CARD 79.21 
+2502 DEBIT 2024-04-22 qt 859 arlington tx                          04/21 -27.81 DEBIT_CARD 87.33 
+2503 DEBIT 2024-04-22 iceland ice cream arlington tx               04/20 -7.68 DEBIT_CARD 115.14 
+2504 DEBIT 2024-04-22 chili's s. arlington arlington tx            04/20 -24.63 DEBIT_CARD 122.82 
+2505 DEBIT 2024-04-22 zelle payment to atharv arya 20534939370 -19.00 QUICKPAY_DEBIT 147.45 
+2506 DEBIT 2024-04-22 amc 0158 arlington 18 arlington tx           04/20 -34.06 DEBIT_CARD 166.45 
+2507 DEBIT 2024-04-22 amc 0158 arlington 18 arlington tx           04/20 -12.98 DEBIT_CARD 200.51 
+2508 DEBIT 2024-04-22 amc 0158 arlington 18 arlington tx           04/19 -12.98 DEBIT_CARD 213.49 
+2509 DEBIT 2024-04-22 amc 0158 arlington 18 arlington tx           04/19 -12.98 DEBIT_CARD 226.47 
+2510 DEBIT 2024-04-22 popeyes 13754 arlington tx                   04/19 -12.64 DEBIT_CARD 239.45 
+2511 DEBIT 2024-04-22 zelle payment to logan jpm99afs6i37 -6.00 CHASE_TO_PARTNERFI 252.09 
+2512 CREDIT 2024-04-22 zelle payment from shashank yaji 20550420207 6.00 QUICKPAY_CREDIT 258.09 
+2513 CREDIT 2024-04-22 online transfer from sav ...1178 transaction#: 20540352166 50.00 ACCT_XFER 252.09 
+2514 CREDIT 2024-04-22 online transfer from sav ...1178 transaction#: 20525977588 100.00 ACCT_XFER 202.09 
+2515 DEBIT 2024-04-19 zelle payment to kabir 20512126457 -22.00 QUICKPAY_DEBIT 102.09 
+2516 DEBIT 2024-04-15 10125 cava southlake southlake tx            04/14 -30.09 DEBIT_CARD 124.09 
+2517 DEBIT 2024-04-15 10125 cava southlake southlake tx            04/14 -15.64 DEBIT_CARD 154.18 
+2518 DEBIT 2024-04-15 target        00008763 grapevine tx          04/14 -14.49 DEBIT_CARD 169.82 
+2519 DEBIT 2024-04-15 zelle payment to random2 20470335455 -19.00 QUICKPAY_DEBIT 184.31 
+2520 DEBIT 2024-04-15 canteen 10 hunt valley md                    04/14 -1.50 DEBIT_CARD 203.31 
+2521 DEBIT 2024-04-15 indian corner arlington tx                   04/12 -12.98 DEBIT_CARD 204.81 
+2522 DEBIT 2024-04-15 pie five arlington arlington tx              04/12 -17.11 DEBIT_CARD 217.79 
+2523 CREDIT 2024-04-15 zelle payment from shashank yaji 20471945241 33.00 QUICKPAY_CREDIT 234.90 
+2524 CREDIT 2024-04-15 online transfer from sav ...1178 transaction#: 20469982661 100.00 ACCT_XFER 201.90 
+2525 DEBIT 2024-04-12 zelle payment to shashank 20451590993 -29.00 QUICKPAY_DEBIT 101.90 
+2526 DEBIT 2024-04-12 indian corner arlington tx                   04/11 -31.90 DEBIT_CARD 130.90 
+2527 CREDIT 2024-04-12 online transfer from sav ...1178 transaction#: 20451604946 50.00 ACCT_XFER 162.80 
+2528 DEBIT 2024-04-11 online transfer to sav ...1178 transaction#: 20431165460 04/11 -25.00 ACCT_XFER 112.80 
+2529 DEBIT 2024-04-11 zelle payment to kabir 20430072712 -10.83 QUICKPAY_DEBIT 137.80 
+2530 DEBIT 2024-04-10 international incoming wire fee -15.00 FEE_TRANSACTION 148.63 
+2531 DEBIT 2024-04-10 online transfer to sav ...1178 transaction#: 20426007029 04/10 -8278.14 ACCT_XFER 163.63 
+2532 CREDIT 2024-04-10 zelle payment from vikash mall 20420685514 17.08 QUICKPAY_CREDIT 8441.77 
+2533 CREDIT 2024-04-10 book transfer credit b/o: hdfc bank ltd kanjur marg east mumbai india in org:/50100221134995 viswanadha vijay kumar ref: remit for family maint res trn: 0612477101fs 8278.14 WIRE_INCOMING 8424.69 
+2534 DEBIT 2024-04-09 taco bell 035428 arlington tx                04/09 -14.49 DEBIT_CARD 146.55 
+2535 DEBIT 2024-04-08 fiv*rocketbelly arlington tx                 04/07 -8.12 DEBIT_CARD 161.04 
+2536 DEBIT 2024-04-08 canteen 10 hunt valley md                    04/07 -1.25 DEBIT_CARD 169.16 
+2537 DEBIT 2024-04-08 sq *winters? snow arlington tx               04/06 -4.50 DEBIT_CARD 170.41 
+2538 CREDIT 2024-04-08 zelle payment from shashank yaji 20400993182 4.20 QUICKPAY_CREDIT 174.91 
+2539 CREDIT 2024-04-08 online transfer from sav ...1178 transaction#: 20406076356 100.00 ACCT_XFER 170.71 
+2540 DEBIT 2024-04-05 uta market cafe arlington tx                 04/04 -15.14 DEBIT_CARD 70.71 
+2541 DEBIT 2024-04-03 wingstop arlington tx                        04/02 -39.49 DEBIT_CARD 85.85 
+2542 DEBIT 2024-04-03 apple.com/bill 866-712-7753 ca               04/02 -0.99 DEBIT_CARD 125.34 
+2543 DEBIT 2024-04-01 paypal           inst xfer  loganmonroe004  web id: paypalsi77 -17.38 MISC_DEBIT 126.33 
+2544 DEBIT 2024-04-01 zelle payment to kabir 20321397910 -23.00 QUICKPAY_DEBIT 143.71 
+2545 DEBIT 2024-04-01 tst* prince lebanese 817-469-1811 tx         03/31 -29.07 DEBIT_CARD 166.71 
+2546 CREDIT 2024-04-01 zelle payment from pooja dubey 20316748907 14.40 QUICKPAY_CREDIT 195.78 
+2547 CREDIT 2024-04-01 zelle payment from jiaa suthar pncaa0kjo76d 14.40 PARTNERFI_TO_CHASE 181.38 
+2548 DEBIT 2024-03-29 zelle payment to kabir 20307168716 -2.16 QUICKPAY_DEBIT 166.98 
+2549 DEBIT 2024-03-29 chatgpt subscription httpsopenai.c ca        03/29 -21.28 DEBIT_CARD 169.14 
+2550 CREDIT 2024-03-29 zelle payment from atharv arya 20293142461 20.00 QUICKPAY_CREDIT 190.42 
+2551 DEBIT 2024-03-28 zelle payment to shashank 20292832363 -61.00 QUICKPAY_DEBIT 170.42 
+2552 DEBIT 2024-03-28 wal-mart #5416 arlington tx                  03/28 -19.64 DEBIT_CARD 231.42 
+2553 CREDIT 2024-03-28 zelle payment from shashank yaji 19992202905 10.64 QUICKPAY_CREDIT 251.06 
+2554 CREDIT 2024-03-28 online transfer from sav ...1178 transaction#: 20291039637 88.00 ACCT_XFER 240.42 
+2555 CREDIT 2024-03-27 zelle payment from shashank yaji 20281829137 5.00 QUICKPAY_CREDIT 152.42 
+2556 DEBIT 2024-03-25 uber   *trip san francisco ca        770356  03/23 -33.47 DEBIT_CARD 147.42 
+2557 DEBIT 2024-03-25 basil thai grapevine tx                      03/23 -7.32 DEBIT_CARD 180.89 
+2558 DEBIT 2024-03-25 basil thai grapevine tx                      03/23 -61.24 DEBIT_CARD 188.21 
+2559 DEBIT 2024-03-25 nikepos_us grapevine tx                      03/24 -140.70 DEBIT_CARD 249.45 
+2560 DEBIT 2024-03-25 rack room shoes #0276 704-5478100 tx         03/23 -91.99 DEBIT_CARD 390.15 
+2561 DEBIT 2024-03-25 uber   *trip san francisco ca        578121  03/23 -38.40 DEBIT_CARD 482.14 
+2562 DEBIT 2024-03-25 br factory us 6346 grapevine tx              03/23 -18.94 DEBIT_CARD 520.54 
+2563 DEBIT 2024-03-25 nautica 2326 grapevine tx                    03/24 -97.36 DEBIT_CARD 539.48 
+2564 CREDIT 2024-03-25 zelle payment from deepesh bhatia 20248627842 36.84 QUICKPAY_CREDIT 636.84 
+2565 CREDIT 2024-03-25 online transfer from sav ...1178 transaction#: 20244792814 52.82 ACCT_XFER 600.00 
+2566 CREDIT 2024-03-25 online transfer from sav ...1178 transaction#: 20247814810 100.00 ACCT_XFER 547.18 
+2567 CREDIT 2024-03-25 zelle payment from deepesh bhatia 20246569915 100.00 QUICKPAY_CREDIT 447.18 
+2568 CREDIT 2024-03-25 online transfer from sav ...1178 transaction#: 20247436185 200.00 ACCT_XFER 347.18 
+2569 DEBIT 2024-03-21 uta market cafe arlington tx                 03/20 -6.48 DEBIT_CARD 147.18 
+2570 CREDIT 2024-03-21 zelle payment from shashank yaji 20225650511 5.00 QUICKPAY_CREDIT 153.66 
+2571 DEBIT 2024-03-20 chipotle 0792 arlington tx                   03/19 -17.10 DEBIT_CARD 148.66 
+2572 CREDIT 2024-03-20 zelle payment from shashank yaji 20216018252 8.13 QUICKPAY_CREDIT 165.76 
+2573 DEBIT 2024-03-18 uber   *eats san francisco ca        595346  03/16 -2.10 DEBIT_CARD 157.63 
+2574 DEBIT 2024-03-18 uber   *eats san francisco ca        795315  03/16 -38.90 DEBIT_CARD 159.73 
+2575 DEBIT 2024-03-18 uta market cafe arlington tx                 03/15 -12.96 DEBIT_CARD 198.63 
+2576 CREDIT 2024-03-18 online transfer from sav ...1178 transaction#: 20180357769 100.00 ACCT_XFER 211.59 
+2577 DEBIT 2024-03-18 uber   *eats san francisco ca        869143  03/16 2.03 DEBIT_CARD 111.59 
+2578 DEBIT 2024-03-14 the university o ut arl web                 web id: 1223755714 -2402.24 ACH_DEBIT 109.56 
+2579 DEBIT 2024-03-13 taco bell 735428 arlington tx                03/12 -10.34 DEBIT_CARD 2511.80 
+2580 CREDIT 2024-03-13 zelle payment from deepesh bhatia 20144813575 2.00 QUICKPAY_CREDIT 2522.14 
+2581 CREDIT 2024-03-13 online transfer from sav ...1178 transaction#: 20147176019 2402.24 ACCT_XFER 2520.14 
+2582 DEBIT 2024-03-12 sq *golconda xpress ind arlington tx         03/11 -6.82 DEBIT_CARD 117.90 
+2583 DEBIT 2024-03-12 sq *golconda xpress ind arlington tx         03/11 -14.40 DEBIT_CARD 124.72 
+2584 DEBIT 2024-03-12 sq *golconda xpress ind arlington tx         03/11 -18.73 DEBIT_CARD 139.12 
+2585 DEBIT 2024-03-12 guess inc 213-7655594 ca                     03/12 -119.62 DEBIT_CARD 157.85 
+2586 CREDIT 2024-03-12 zelle payment from kabir puri 20130616228 12.00 QUICKPAY_CREDIT 277.47 
+2587 CREDIT 2024-03-12 zelle payment from deepesh bhatia 20133706235 32.09 QUICKPAY_CREDIT 265.47 
+2588 DEBIT 2024-03-11 zelle payment to samridh 20123528949 -9.57 QUICKPAY_DEBIT 233.38 
+2589 DEBIT 2024-03-11 taco bell 735428 arlington tx                03/09 -9.90 DEBIT_CARD 242.95 
+2590 DEBIT 2024-03-11 zelle payment to atharv arya 20112675203 -7.00 QUICKPAY_DEBIT 252.85 
+2591 CREDIT 2024-03-11 zelle payment from kabir puri 20111743867 9.00 QUICKPAY_CREDIT 259.85 
+2592 CREDIT 2024-03-11 zelle payment from siddharth shivaji murkute 20120466818 17.09 QUICKPAY_CREDIT 250.85 
+2593 CREDIT 2024-03-11 online transfer from sav ...1178 transaction#: 20120259788 100.00 ACCT_XFER 233.76 
+2594 DEBIT 2024-03-08 wal-mart super center arlington tx           03/08 -73.81 DEBIT_CARD 133.76 
+2595 CREDIT 2024-03-08 online transfer from sav ...1178 transaction#: 20103889951 100.00 ACCT_XFER 207.57 
+2596 DEBIT 2024-03-07 online transfer to sav ...1178 transaction#: 20087090563 03/07 -2000.00 ACCT_XFER 107.57 
+2597 CREDIT 2024-03-07 zelle payment from navneet viswanadha wfct0s28zld2 2000.00 PARTNERFI_TO_CHASE 2107.57 
+2598 DEBIT 2024-03-06 494pepsiven9147678600 mesquite tx            03/05 -2.10 DEBIT_CARD 107.57 
+2599 CREDIT 2024-03-06 zelle payment from shashank yaji 20080355876 5.00 QUICKPAY_CREDIT 109.67 
+2600 DEBIT 2024-03-04 apple.com/bill 866-712-7753 ca               03/02 -0.99 DEBIT_CARD 104.67 
+2601 DEBIT 2024-02-29 chatgpt subscription httpsopenai.c ca        02/29 -21.28 DEBIT_CARD 105.66 
+2602 CREDIT 2024-02-28 zelle payment from shashank yaji 19701715601 10.64 QUICKPAY_CREDIT 126.94 
+2603 DEBIT 2024-02-27 the university o ut arl web                 web id: 1223755714 -2172.78 ACH_DEBIT 116.30 
+2604 CREDIT 2024-02-27 zelle payment from shashank yaji 19989169726 5.00 QUICKPAY_CREDIT 2289.08 
+2605 DEBIT 2024-02-26 indian corner arlington tx                   02/25 -18.92 DEBIT_CARD 2284.08 
+2606 DEBIT 2024-02-26 uber   *eats san francisco ca        043567  02/24 -31.12 DEBIT_CARD 2303.00 
+2607 DEBIT 2024-02-26 uber   *eats san francisco ca        210093  02/24 -12.58 DEBIT_CARD 2334.12 
+2608 DEBIT 2024-02-26 zelle payment to kabir 19964905554 -4.00 QUICKPAY_DEBIT 2346.70 
+2609 DEBIT 2024-02-26 google *google storag 855-836-3987 ca        02/24 -21.31 DEBIT_CARD 2350.70 
+2610 CREDIT 2024-02-26 online transfer from sav ...1178 transaction#: 19982125393 2232.78 ACCT_XFER 2372.01 
+2611 DEBIT 2024-02-23 zelle payment to shashank 19956254465 -80.73 QUICKPAY_DEBIT 139.23 
+2612 CREDIT 2024-02-23 online transfer from sav ...1178 transaction#: 19956252704 100.00 ACCT_XFER 219.96 
+2613 DEBIT 2024-02-20 uber   eats help.uber.com ca                 02/17 -65.98 DEBIT_CARD 119.96 
+2614 CREDIT 2024-02-20 zelle payment from shashank yaji 19899138191 16.33 QUICKPAY_CREDIT 185.94 
+2615 CREDIT 2024-02-20 zelle payment from vikash mall 19899163427 16.33 QUICKPAY_CREDIT 169.61 
+2616 CREDIT 2024-02-20 zelle payment from deepesh bhatia 19899153188 16.34 QUICKPAY_CREDIT 153.28 
+2617 DEBIT 2024-02-12 indian corner arlington tx                   02/11 -4.31 DEBIT_CARD 136.94 
+2618 DEBIT 2024-02-12 indian corner arlington tx                   02/11 -4.32 DEBIT_CARD 141.25 
+2619 CREDIT 2024-02-07 zelle payment from shashank yaji 19803187902 10.00 QUICKPAY_CREDIT 145.57 
+2620 DEBIT 2024-02-06 cash app*square cash san francisco ca062777  02/06 30.00 DEBIT_CARD 135.57 
+2621 DEBIT 2024-02-05 uta bookstore #812 arlington tx              02/04 -3.50 DEBIT_CARD 105.57 
+2622 DEBIT 2024-02-05 zelle payment to logan jpm99a8yprn4 -18.00 CHASE_TO_PARTNERFI 109.07 
+2623 DEBIT 2024-02-05 zelle payment to kabir 19761888265 -19.00 QUICKPAY_DEBIT 127.07 
+2624 DEBIT 2024-02-05 great american cookies arlington tx          02/02 -2.49 DEBIT_CARD 146.07 
+2625 DEBIT 2024-02-05 desi indian grocery arlington tx             02/01 -13.98 DEBIT_CARD 148.56 
+2626 DEBIT 2024-02-05 desi indian grocery arlington tx             02/01 -14.99 DEBIT_CARD 162.54 
+2627 DEBIT 2024-02-05 wal-mart #1801     se2 arlington tx          02/03 29.10 DEBIT_CARD 177.53 
+2628 DEBIT 2024-02-02 wal-mart #1801 arlington tx                  02/02 -83.49 DEBIT_CARD 148.43 
+2629 DEBIT 2024-02-02 apple.com/bill 866-712-7753 ca               02/02 -0.99 DEBIT_CARD 231.92 
+2630 DEBIT 2024-02-01 wal-mart #5416 arlington tx                  02/01 -69.74 DEBIT_CARD 232.91 
+2631 DEBIT 2024-02-01 zelle payment to shashank 19743537242 -19.14 QUICKPAY_DEBIT 302.65 
+2632 CREDIT 2024-02-01 zelle payment from kabir puri 19744728816 7.55 QUICKPAY_CREDIT 321.79 
+2633 CREDIT 2024-02-01 zelle payment from siddharth tyagi 19744727302 18.95 QUICKPAY_CREDIT 314.24 
+2634 CREDIT 2024-01-30 zelle payment from shashank yaji 19717067257 10.00 QUICKPAY_CREDIT 295.29 
+2635 DEBIT 2024-01-29 chatgpt subscription httpsopenai.c ca        01/29 -21.28 DEBIT_CARD 285.29 
+2636 CREDIT 2024-01-29 zelle payment from shashank yaji 19701715552 10.64 QUICKPAY_CREDIT 306.57 
+2637 DEBIT 2024-01-25 lyft   ride tue 10am 855-865-9553 ca         01/24 -5.71 DEBIT_CARD 295.93 
+2638 DEBIT 2024-01-24 lyft   ride tue 10am 855-865-9553 ca         01/23 -8.32 DEBIT_CARD 301.64 
+2639 DEBIT 2024-01-23 online transfer to sav ...1178 transaction#: 19653486277 01/23 -3600.00 ACCT_XFER 309.96 
+2640 CREDIT 2024-01-23 zelle payment from shashank yaji 19657453970 5.00 QUICKPAY_CREDIT 3909.96 
+2641 DEBIT 2024-01-22 the university o ut arl web                 web id: 1223755714 -2172.78 ACH_DEBIT 3904.96 
+2642 DEBIT 2024-01-22 zelle payment to shashank 19642749108 -62.50 QUICKPAY_DEBIT 6077.74 
+2643 DEBIT 2024-01-22 zelle payment to vikash mall uta 19642684651 -8.34 QUICKPAY_DEBIT 6140.24 
+2644 DEBIT 2024-01-22 zelle payment to shashank 19642683901 -25.00 QUICKPAY_DEBIT 6148.58 
+2645 DEBIT 2024-01-22 zelle payment to siddharth 19633125861 -6.60 QUICKPAY_DEBIT 6173.58 
+2646 DEBIT 2024-01-16 lyft   ride sun 5pm 855-865-9553 ca          01/15 -39.09 DEBIT_CARD 6180.18 
+2647 DEBIT 2024-01-16 zelle payment to mota bhai jpm99a7wg0rh -9.00 CHASE_TO_PARTNERFI 6219.27 
+2648 CREDIT 2024-01-12 zelle payment from samridh singh 19566150788 9.00 QUICKPAY_CREDIT 6228.27 
+2649 DEBIT 2024-01-11 the university o ut arl web                 web id: 1223755714 -2213.16 ACH_DEBIT 6219.27 
+2650 DEBIT 2024-01-11 zelle payment to mota bhai jpm99a7sl1l4 -76.11 CHASE_TO_PARTNERFI 8432.43 
+2651 CREDIT 2024-01-11 zelle payment from navneet viswanadha wfct0rvs49gn 80.00 PARTNERFI_TO_CHASE 8508.54 
+2652 DEBIT 2024-01-10 international incoming wire fee -15.00 FEE_TRANSACTION 8428.54 
+2653 CREDIT 2024-01-10 zelle payment from samridh singh 19543086252 76.11 QUICKPAY_CREDIT 8443.54 
+2654 CREDIT 2024-01-10 book transfer credit b/o: hdfc bank ltd kanjur marg east mumbai india in org:/50100141846275 g sudha ref: remit for family maint res trn: 3785635010fs 8286.96 WIRE_INCOMING 8367.43 
+2655 DEBIT 2024-01-03 apple.com/bill 866-712-7753 ca               01/03 -0.99 DEBIT_CARD 80.47 
+2656 DEBIT 2024-01-02 zelle payment to shashank 19458701071 -49.00 QUICKPAY_DEBIT 81.46 
+2657 DEBIT 2023-12-18 uber   trip help.uber.com ca                 12/16 -1.00 DEBIT_CARD 130.46 
+2658 DEBIT 2023-12-13 zelle payment to samridh 19280067160 -2.00 QUICKPAY_DEBIT 131.46 
+2659 DEBIT 2023-12-12 494pepsiven9147678600 mesquite tx            12/11 -3.50 DEBIT_CARD 133.46 
+2660 DEBIT 2023-12-12 canteen vending dallas tx                    12/11 -1.60 DEBIT_CARD 136.96 
+2661 DEBIT 2023-12-06 apple.com/bill 866-712-7753 ca               12/05 -0.99 DEBIT_CARD 138.56 
+2662 DEBIT 2023-12-05 zelle payment to deepesh 19204539773 -12.66 QUICKPAY_DEBIT 139.55 
+2663 DEBIT 2023-12-05 desi indian grocery arlington tx             12/03 -28.78 DEBIT_CARD 152.21 
+2664 DEBIT 2023-12-05 desi indian grocery arlington tx             12/03 -11.26 DEBIT_CARD 180.99 
+2665 DEBIT 2023-12-05 amc 0158 arlington 18 arlington tx           12/03 -19.46 DEBIT_CARD 192.25 
+2666 DEBIT 2023-12-04 paypal           inst xfer  atharvaryamrt   web id: paypalsi77 -9.75 MISC_DEBIT 211.71 
+2667 DEBIT 2023-12-04 fatburger - arlington arlington tx           12/03 -24.11 DEBIT_CARD 221.46 
+2668 DEBIT 2023-12-04 uber   trip help.uber.com ca                 12/04 -9.50 DEBIT_CARD 245.57 
+2669 DEBIT 2023-12-04 uber   trip help.uber.com ca                 12/03 -7.91 DEBIT_CARD 255.07 
+2670 DEBIT 2023-12-04 494pepsiven9147678600 mesquite tx            12/03 -4.00 DEBIT_CARD 262.98 
+2671 CREDIT 2023-12-04 zelle payment from shashank yaji 19186969860 14.48 QUICKPAY_CREDIT 266.98 
+2672 DEBIT 2023-11-28 walmart.com 800-966-6546 ar                  11/28 -81.04 DEBIT_CARD 252.50 
+2673 DEBIT 2023-11-27 zelle payment to deepesh 19113534915 -113.71 QUICKPAY_DEBIT 333.54 
+2674 DEBIT 2023-11-27 zelle payment to deepesh 19113533735 -1.00 QUICKPAY_DEBIT 447.25 
+2675 DEBIT 2023-11-27 desi indian grocery arlington tx             11/24 -44.70 DEBIT_CARD 448.25 
+2676 DEBIT 2023-11-27 google *google storag 855-836-3987 ca        11/25 -1.58 DEBIT_CARD 492.95 
+2677 CREDIT 2023-11-27 zelle payment from vikash mall 19112736026 7.00 QUICKPAY_CREDIT 494.53 
+2678 CREDIT 2023-11-27 zelle payment from shashank yaji 19112718879 7.00 QUICKPAY_CREDIT 487.53 
+2679 CREDIT 2023-11-27 zelle payment from samridh singh 19112691336 29.30 QUICKPAY_CREDIT 480.53 
+2680 CREDIT 2023-11-27 zelle payment from navneet viswanadha wfct0rr7k8nk 200.00 PARTNERFI_TO_CHASE 451.23 
+2681 DEBIT 2023-11-24 zelle payment to samridh 19090619087 -3.00 QUICKPAY_DEBIT 251.23 
+2682 DEBIT 2023-11-24 494pepsiven9147678600 mesquite tx            11/22 -4.00 DEBIT_CARD 254.23 
+2683 CREDIT 2023-11-24 zelle payment from shashank yaji 19101356430 12.77 QUICKPAY_CREDIT 258.23 
+2684 DEBIT 2023-11-22 uber   eats help.uber.com ca                 11/22 -4.00 DEBIT_CARD 245.46 
+2685 DEBIT 2023-11-22 uber   eats help.uber.com ca                 11/22 -16.80 DEBIT_CARD 249.46 
+2686 DEBIT 2023-11-22 starbucks 53016 grand prairie tx             11/21 -7.20 DEBIT_CARD 266.26 
+2687 DEBIT 2023-11-22 nikepos_us grand prairi tx                   11/21 114.71 DEBIT_CARD 273.46 
+2688 DEBIT 2023-11-21 zelle payment to deepesh 19074225752 -7.00 QUICKPAY_DEBIT 158.75 
+2689 DEBIT 2023-11-20 494pepsiven9147678600 mesquite tx            11/19 -3.00 DEBIT_CARD 165.75 
+2690 DEBIT 2023-11-20 uber   eats help.uber.com ca                 11/18 -4.33 DEBIT_CARD 168.75 
+2691 DEBIT 2023-11-20 uber   eats help.uber.com ca                 11/18 -19.26 DEBIT_CARD 173.08 
+2692 DEBIT 2023-11-17 dutch bros tx1705 arlin arlington tx         11/16 -13.57 DEBIT_CARD 192.34 
+2693 DEBIT 2023-11-16 nike.com 800-8066453 ca                      11/16 -130.95 DEBIT_CARD 205.91 
+2694 CREDIT 2023-11-16 zelle payment from kabir puri 19021644301 6.50 QUICKPAY_CREDIT 336.86 
+2695 CREDIT 2023-11-14 zelle payment from atharv arya 19009735290 21.83 QUICKPAY_CREDIT 330.36 
+2696 CREDIT 2023-11-14 zelle payment from samridh singh 19009752061 21.83 QUICKPAY_CREDIT 308.53 
+2697 CREDIT 2023-11-14 zelle payment from yash ajariwal 19009648152 21.83 QUICKPAY_CREDIT 286.70 
+2698 CREDIT 2023-11-14 zelle payment from vikash mall 19009657217 21.83 QUICKPAY_CREDIT 264.87 
+2699 CREDIT 2023-11-14 zelle payment from shashank yaji 19001504539 21.83 QUICKPAY_CREDIT 243.04 
+2700 DEBIT 2023-11-13 paypal           inst xfer  loganmonroe004  web id: paypalsi77 -3.61 MISC_DEBIT 221.21 
+2701 DEBIT 2023-11-13 zelle payment to kabir 18991646960 -14.45 QUICKPAY_DEBIT 224.82 
+2702 CREDIT 2023-11-13 zelle payment from navneet viswanadha wfct0rq6d9g3 100.00 PARTNERFI_TO_CHASE 239.27 
+2703 DEBIT 2023-11-09 zelle payment to kabir 18965846397 -4.00 QUICKPAY_DEBIT 139.27 
+2704 CREDIT 2023-11-09 zelle payment from kabir puri 18965809596 18.45 QUICKPAY_CREDIT 143.27 
+2705 CREDIT 2023-11-07 zelle payment from shashank yaji 18946317018 5.00 QUICKPAY_CREDIT 124.82 
+2706 CREDIT 2023-11-06 paypal           transfer                   ppd id: paypalsd11 25.96 MISC_CREDIT 119.82 
+2707 DEBIT 2023-11-03 ross store #2339 arlington tx                11/02 -73.57 DEBIT_CARD 93.86 
+2708 DEBIT 2023-11-03 texas thrift store 117 arlington tx          11/02 -32.44 DEBIT_CARD 167.43 
+2709 DEBIT 2023-11-03 amc 0158 arlington 18 arlington tx           11/02 -19.46 DEBIT_CARD 199.87 
+2710 DEBIT 2023-11-03 amc 0158 arlington 18 arlington tx           11/02 -51.92 DEBIT_CARD 219.33 
+2711 DEBIT 2023-10-31 cash app*square cash san francisco ca752504  10/31 65.00 DEBIT_CARD 271.25 
+2712 DEBIT 2023-10-30 desi indian grocery arlington tx             10/29 -49.56 DEBIT_CARD 206.25 
+2713 DEBIT 2023-10-30 zelle payment to shashank 18853811872 -87.98 QUICKPAY_DEBIT 255.81 
+2714 DEBIT 2023-10-30 wm superc wal-mart sup arlington tx          10/29 -80.42 DEBIT_CARD 343.79 
+2715 DEBIT 2023-10-30 wm superc wal-mart sup arlington tx          10/29 -59.36 DEBIT_CARD 424.21 
+2716 DEBIT 2023-10-30 wm superc wal-mart sup arlington tx          10/29 -37.22 DEBIT_CARD 483.57 
+2717 DEBIT 2023-10-30 uber   eats help.uber.com ca                 10/29 -5.00 DEBIT_CARD 520.79 
+2718 DEBIT 2023-10-30 uber   eats help.uber.com ca                 10/29 -26.15 DEBIT_CARD 525.79 
+2719 DEBIT 2023-10-30 uta seir cafe arlington tx                   10/27 -5.19 DEBIT_CARD 551.94 
+2720 CREDIT 2023-10-30 paypal           transfer                   ppd id: paypalsd11 32.81 MISC_CREDIT 557.13 
+2721 DEBIT 2023-10-26 paypal           inst xfer  loganmonroe004  web id: paypalsi77 -2.50 MISC_DEBIT 524.32 
+2722 CREDIT 2023-10-26 zelle payment from navneet viswanadha wfct0rnp5frg 200.00 PARTNERFI_TO_CHASE 526.82 
+2723 DEBIT 2023-10-23 494pepsiven9147678600 mesquite tx            10/20 -3.50 DEBIT_CARD 326.82 
+2724 DEBIT 2023-10-20 zelle payment to shashank 18778802821 -14.06 QUICKPAY_DEBIT 330.32 
+2725 DEBIT 2023-10-17 amzn mktp us*tp0zs7r amzn.com/bill wa        10/16 -4.32 DEBIT_CARD 344.38 
+2726 DEBIT 2023-10-16 uber   eats help.uber.com ca                 10/15 -3.82 DEBIT_CARD 348.70 
+2727 DEBIT 2023-10-16 uber   eats help.uber.com ca                 10/15 -9.77 DEBIT_CARD 352.52 
+2728 CREDIT 2023-10-16 zelle payment from kabir puri pncaa0hbw94r 4.32 PARTNERFI_TO_CHASE 362.29 
+2729 DEBIT 2023-10-05 uta arl mymav 817-2722172 tx                 10/03 -2.45 DEBIT_CARD 357.97 
+2730 DEBIT 2023-10-02 zelle payment to yash 18614697527 -15.00 QUICKPAY_DEBIT 360.42 
+2731 DEBIT 2023-10-02 494pepsiven9147678600 mesquite tx            09/29 -2.00 DEBIT_CARD 375.42 
+2732 DEBIT 2023-10-02 cash app*square cash san francisco ca941131  10/02 43.00 DEBIT_CARD 377.42 
+2733 DEBIT 2023-09-26 uta market cafe arlington tx                 09/25 -8.85 DEBIT_CARD 334.42 
+2734 CREDIT 2023-09-25 zelle payment from shashank yaji 18521610979 2.18 QUICKPAY_CREDIT 343.27 
+2735 CREDIT 2023-09-20 zelle payment from shashank yaji 18493893378 13.53 QUICKPAY_CREDIT 341.09 
+2736 DEBIT 2023-09-18 zelle payment to shashank 18465282432 -8.39 QUICKPAY_DEBIT 327.56 
+2737 CREDIT 2023-09-12 $100 for new checking 100.00 MISC_CREDIT 335.95 
+2738 DEBIT 2023-09-11 049 torchys north arlin arlington tx         09/10 -19.54 DEBIT_CARD 235.95 
+2739 DEBIT 2023-09-11 494pepsiven9147678600 mesquite tx            09/10 -2.00 DEBIT_CARD 255.49 
+2740 DEBIT 2023-09-11 494pepsiven9147678600 mesquite tx            09/10 -2.00 DEBIT_CARD 257.49 
+2741 DEBIT 2023-09-11 zelle payment to logan jpm99a1wjx7n -4.30 CHASE_TO_PARTNERFI 259.49 
+2742 CREDIT 2023-09-06 zelle payment from navneet viswanadha wfct0rjvqqn8 1.00 PARTNERFI_TO_CHASE 263.79 
+2743 CREDIT 2023-09-06 zelle payment from navneet viswanadha wfct0rjvqx9k 100.00 PARTNERFI_TO_CHASE 262.79 
+2744 CREDIT 2023-09-06 zelle payment from navneet viswanadha wfct0rjvqv8v 149.00 PARTNERFI_TO_CHASE 162.79 
+2745 DEBIT 2023-09-05 zelle payment to shashank 18342967566 -1.00 QUICKPAY_DEBIT 13.79 
+2746 DEBIT 2023-09-05 zelle payment to shashank 18342986306 -1.00 QUICKPAY_DEBIT 14.79 
+2747 DEBIT 2023-09-05 zelle payment to shashank 18342985882 -1.00 QUICKPAY_DEBIT 15.79 
+2748 DEBIT 2023-09-05 zelle payment to shashank 18342984768 -1.00 QUICKPAY_DEBIT 16.79 
+2749 DEBIT 2023-09-05 zelle payment to shashank 18342984024 -1.00 QUICKPAY_DEBIT 17.79 
+2750 DEBIT 2023-09-05 zelle payment to shashank 18342964336 -1.00 QUICKPAY_DEBIT 18.79 
+2751 DEBIT 2023-09-05 zelle payment to shashank 18342973493 -1.00 QUICKPAY_DEBIT 19.79 
+2752 DEBIT 2023-09-05 zelle payment to shashank 18342973112 -1.00 QUICKPAY_DEBIT 20.79 
+2753 DEBIT 2023-09-05 zelle payment to shashank 18342956999 -1.00 QUICKPAY_DEBIT 21.79 
+2754 DEBIT 2023-09-05 zelle payment to shashank 18342940519 -1.00 QUICKPAY_DEBIT 22.79 
+2755 CREDIT 2023-09-05 zelle payment from shashank yaji 18342968846 10.00 QUICKPAY_CREDIT 23.79 
+2756 CREDIT 2023-09-05 zelle payment from shashank yaji 18342899461 13.79 QUICKPAY_CREDIT 13.79 
+>>> 

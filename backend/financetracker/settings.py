@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'uploader',
+    'storage',
 ]
 
 MIDDLEWARE = [
@@ -147,6 +149,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #         'django': {
 #             'handlers': ['console'],
 #             'level': 'DEBUG',
+#         },
+#         '': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG',        
 #         },
 #     },
 # }
