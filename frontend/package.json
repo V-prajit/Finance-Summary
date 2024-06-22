@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --watch-poll",
+    "start": "PORT=3002 react-scripts start --watch-poll",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
