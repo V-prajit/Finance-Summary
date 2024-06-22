@@ -3,4 +3,4 @@ WORKDIR /app
 COPY ./backend /app/
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 3000
-CMD python ./main.py
+CMD ["python","manage.py","runserver", "0.0.0.0:3000"]
