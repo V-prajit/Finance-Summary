@@ -29,12 +29,14 @@ services:
     ports:
       - "3000:3000"
     volumes:
+    #to be removed after development
       - ./backend:/app/
     environment:
       DATABASE_HOST: db
       DATABASE_NAME: financetracker
       DATABASE_USER: financetracker
       DATABASE_PASSWORD: random
+      DATABASE_PORT: 5432
     networks:
       - financetracker-network
 
