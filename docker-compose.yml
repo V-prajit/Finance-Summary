@@ -39,7 +39,6 @@ services:
       DATABASE_PORT: 5432
     networks:
       - financetracker-network
-    entrypoint: ["/app/entrypoint.sh"]
 
   frontend:
     build: 
