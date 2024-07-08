@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const backendUrl = "http://localhost:3000"; // Make sure this is the correct URL for your Django server
+const backendUrl = "http://localhost:3000";
 
 interface LoginData {
   success: boolean;
