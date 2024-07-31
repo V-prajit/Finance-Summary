@@ -4,7 +4,7 @@ from .models import Transaction, Tag
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
-        field = ['id', 'tag']
+        fields = ['id', 'tag']
 
 class TransactionSerializer(serializers.ModelSerializer):
     tags = TagSerializer(many = True, read_only = True)
@@ -12,3 +12,10 @@ class TransactionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transaction
         fields = ['id', 'details', 'posting_date', 'description', 'amount', 'transaction_type', 'balance', 'check_or_slip', 'tags']
+
+class TransactionWithTagsSerializer(serializers.ModelSerializer):
+    tags = TagSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Transaction
+        fields = ['id', 'description', 'tags']

@@ -1,36 +1,55 @@
 from django.contrib.auth import authenticate, login, logout
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
-from django.views.decorators.http import require_POST
 from .models import User
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.permissions import AllowAny
 
 @csrf_exempt
-@require_POST
+@api_view(['POST'])
+@permission_classes([AllowAny])
 def login_view(request):
-    username = request.POST.get('username')
-    password = request.POST.get('password')
-    user = authenticate(request, username=username, password=password)
+    username = request.data.get('username')
+    password = request.data.get('password')
+
+    user = authenticate(username=username, password=password)
+    
     if user is not None:
-        login(request, user)
-        return JsonResponse({'success': True})
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        })
     else:
-        return JsonResponse({'success': False, 'error': 'Invalid credentials'}, status = 400)
+        return Response({'error': 'Invalid credentials'}, status=400)
 
 @csrf_exempt
-@require_POST
+@api_view(['POST'])
 def logout_view(request):
-    logout(request)
     return JsonResponse({'success': True})
 
 @csrf_exempt
-@require_POST
+@api_view(['POST'])
+@permission_classes([AllowAny])
 def register_view(request):
-    username = request.POST.get('username')
-    password = request.POST.get('password')
-    email = request.POST.get('email')
+    username = request.data.get('username')
+    password = request.data.get('password')
+    email = request.data.get('email')
 
+    if not username:
+        return Response({'error': 'Username is required'}, status=400)
+    
     if User.objects.filter(username=username).exists():
         return JsonResponse({'success': False, 'error': 'Username already exists'}, status=400)
-    user = User.objects.create_user(username=username, password=password, email=email)
-    login(request, user)
-    return JsonResponse({'success': True})
+    try:
+        user = User.objects.create_user(username=username, password=password, email=email)
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            'success': True,
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        })
+    except ValueError as e:
+        return Response({'error': str(e)}, status=400)

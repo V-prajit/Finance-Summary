@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
+import TransactionTable from "./Transactiontable";
+import { login, logout, refreshToken, isTokenExpired, register } from "./auth"
+import axios from 'axios';
 
-const backendUrl = "http://localhost:3000";
+const API_URL = "http://localhost:3000/api/";
+const UPLOAD_URL = "http://localhost:3000/upload/";
 
 interface LoginData {
   success: boolean;
@@ -15,6 +19,7 @@ interface UploadData {
   errors?: number;
   duplicates?: number;
 }
+
 
 const App: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -31,81 +36,71 @@ const App: React.FC = () => {
     }
   };
 
-  const onFileUpload = (): void => {
+  const onFileUpload = async (): Promise<void> => {
+    if (!file) return;
+
     const formData = new FormData();
-    if (file) {
-      formData.append("file", file);
+    formData.append("file", file);
+
+    try {
+      const token = localStorage.getItem('access_token');
+      if (token && isTokenExpired(token)) {
+        const refreshed = await refreshToken();
+        if (!refreshed) {
+          throw new Error('Session expired. Please login again.');
+        }
+      }
+
+      const response = await axios.post(`${UPLOAD_URL}`, formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          Authorization: `Bearer ${localStorage.getItem('access_token')}`          
+        }
+      });
+      const data: UploadData = response.data;
+      alert(
+        `Success: ${data.message} transactions_added: ${data.transactions_added} errors: ${data.errors} duplicates: ${data.duplicates}`
+      );
+    } catch (error) {
+      alert("Error uploading file: " + (error as Error).message);
     }
-
-    fetch(`${backendUrl}/upload/`, {
-      method: "POST",
-      body: formData,
-      credentials: "include",
-    })
-      .then((response) => response.json())
-      .then((data: UploadData) => {
-        if (data.error) {
-          alert("Error: " + data.error);
-        } else {
-          alert(
-            "Success: " +
-              data.message +
-              " transactions_added:" +
-              data.transactions_added +
-              " errors:" +
-              data.errors +
-              " duplicates:" +
-              data.duplicates
-          );
-        }
-      })
-      .catch((error) => alert("Error uploading file: " + error));
   };
 
-  const handleLogin = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("username", username);
-    formData.append("password", password);
+  useEffect(() => {
+    const token = localStorage.getItem('access_token');
+    if (token && !isTokenExpired(token)) {
+      setIsLoggedIn(true);
+    }
+  }, []);
 
-    fetch(`${backendUrl}/api/accounts/login/`, {
-      method: "POST",
-      body: formData,
-      credentials: "include",
-    })
-      .then((response) => response.json())
-      .then((data: LoginData) => {
-        if (data.success) {
-          setIsLoggedIn(true);
-        } else {
-          alert("Login failed. Please check your credentials.");
-        }
-      })
-      .catch((error) => alert("Error logging in: " + error));
+  const handleLogin = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+    e.preventDefault();
+    const success = await login(username, password);
+    if (success) {
+      setIsLoggedIn(true);
+    } else {
+      alert("Login failed. Please check your credentials.");
+    }
   };
 
-  const handleRegister = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("username", username);
-    formData.append("password", password);
-    formData.append("email", email);
+  const handleLogout = () => {
+    logout();
+    setIsLoggedIn(false);
+  };
 
-    fetch(`${backendUrl}/api/accounts/register/`, {
-      method: "POST",
-      body: formData,
-      credentials: "include",
-    })
-      .then((response) => response.json())
-      .then((data: LoginData) => {
-        if (data.success) {
-          setIsLoggedIn(true);
-          alert("Registration successful. You are now logged in.");
-        } else {
-          alert("Registration failed: " + data.error);
-        }
-      })
-      .catch((error) => alert("Error registering: " + error));
+  const handleRegister = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
+    e.preventDefault();
+    try{
+      const success = await register(username, password, email);
+      if (success) {
+        setIsLoggedIn(true);
+        alert("Registration successful. You are now logged in.");
+      } else {
+        alert("Registration failed. Please try again.");
+      }
+    } catch (error) {
+      alert("Error registering: " + (error as Error).message);
+    }
   };
 
   if (!isLoggedIn) {
@@ -156,6 +151,9 @@ const App: React.FC = () => {
       <h1>Upload CSV File</h1>
       <input type="file" onChange={onFileChange} />
       <button onClick={onFileUpload}>Upload!</button>
+      <h2>Transactions</h2>
+      <TransactionTable/>
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 };
