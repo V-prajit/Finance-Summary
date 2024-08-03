@@ -6,3 +6,7 @@
 /backend/accounts/__pycache__
 /backend/financetracker/__pycache__
 /node_modules
+.claudeignore
+/claude_chats
+/.mypy_cache
+/__pycache__

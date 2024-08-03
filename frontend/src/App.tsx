@@ -7,11 +7,6 @@ import axios from 'axios';
 const API_URL = "http://localhost:3000/api/";
 const UPLOAD_URL = "http://localhost:3000/upload/";
 
-interface LoginData {
-  success: boolean;
-  error?: string;
-}
-
 interface UploadData {
   error?: string;
   message?: string;
@@ -19,7 +14,6 @@ interface UploadData {
   errors?: number;
   duplicates?: number;
 }
-
 
 const App: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
