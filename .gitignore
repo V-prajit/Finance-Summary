@@ -10,3 +10,5 @@
 /claude_chats
 /.mypy_cache
 /__pycache__
+/backend/storage/management/commands/__pycache__
+/backend/storage/migrations/__pycache__

@@ -39,3 +39,23 @@ class Transaction(models.Model):
             tag, _ = Tag.objects.get_or_create(tag=tag_name)
             self.tags.add(tag)
         self.save()
+
+class AdminRules (models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    pattern = models.CharField(max_length=255)
+    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
+    
+    def __str__(self):
+        return self.name
+
+class CustomRules (models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    pattern = models.CharField(max_length=255)
+    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null= True, blank= True)
+
+    class Meta:
+        unique_together = ('name', 'user')
+
+    def __str__(self):
+        return self.name

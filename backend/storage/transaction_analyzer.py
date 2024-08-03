@@ -1,58 +1,29 @@
-from storage.models import Tag
+from storage.models import Tag, CustomRules, AdminRules
 import re
 
-def analyze_transaction(description):
+def analyze_transaction(description, user):
     return {
-        "category": categorize_transaction(description),
-        "tags": generate_tags(description),
+        "tags": generate_tags(description, user),
     }
 
-def categorize_transaction(description):
-    return "Transfer" if "zelle" in description.lower() else None
+def generate_tags(description, user):
+    tags = set()
 
-import re
+    admin_rules = AdminRules.objects.all()
+    for rule in admin_rules:
+        if re.search(rule.pattern, description, re.IGNORECASE):
+            tags.add(rule.tag.tag)
 
-def generate_tags(description):
-    tags = []
-    description_lower = description.lower()
-
-    # Foreign exchange rate adjustment fee
-    if "foreign exchange rate adjustment fee" in description_lower:
-        tags.append("Type: Foreign Exchange Fee")
-        
-        words = description_lower.split()
-        excluded_words = set(["foreign", "exchange", "rate", "adjustment", "fee"])
-        merchants = set(word.title() for word in words 
-                        if word not in excluded_words 
-                        and word.isalpha() 
-                        and not re.match(r'\d{2}/\d{2}', word))
-        
-        if merchants:
-            tags.append(f"Merchant: {' & '.join(merchants)}")
-        
-        tags.append("Category: Travel")
-
-    # Zelle payments
-    elif "zelle payment" in description_lower:
-        tags.append("Type: Zelle Transfer")
-        
-        # Determine direction
-        direction = "To" if "zelle payment to" in description_lower else "From"
-        tags.append(f"Direction: {direction}")
-
-        # Extract name using regex
-        name_match = re.search(r'zelle payment (?:to|from)\s+([a-zA-Z]+(?:\s+[a-zA-Z]+)?)', description, re.IGNORECASE)
-        if name_match:
-            person_name = name_match.group(1).strip().title()
-            tags.append(f"Person: {person_name}")
-
-    return tags
+    user_rules = CustomRules.objects.filter(user=user)
+    for rule in user_rules:
+        if re.search(rule.pattern, description, re.IGNORECASE):
+            tags.add(rule.tag.tag)
+    
+    return list(tags)
 
 def apply_tags_to_transaction(transaction):
-    analysis = analyze_transaction(transaction.description)
-
+    analysis = analyze_transaction(transaction.description, transaction.user)
     for tag_name in analysis.get('tags', []):
         tag, _ = Tag.objects.get_or_create(tag=tag_name)
         transaction.tags.add(tag)
-
     transaction.save()

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Transaction, Tag
+from .models import Transaction, Tag, CustomRules, AdminRules
 
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,3 +19,18 @@ class TransactionWithTagsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Transaction
         fields = ['id', 'description', 'tags']
+
+class AdminRulesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AdminRules
+        fields = ['id', 'name', 'pattern', 'tag']
+
+class CustomRulesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomRules
+        fields = ['id', 'name', 'pattern', 'tag', 'user']
+        read_only_fields = ['user']
+
+    def create(self, validated_data):
+        validated_data['user'] = self.context['request'].user
+        return super().create(validated_data)
