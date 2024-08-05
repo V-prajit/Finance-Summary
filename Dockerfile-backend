@@ -5,7 +5,7 @@ WORKDIR /app
 COPY ./backend /app/
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN python -m spacy download en_core_web_sm
 
 EXPOSE 3000
-CMD sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:3000"
+
+CMD sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py setup_admin && python manage.py runserver 0.0.0.0:3000"
