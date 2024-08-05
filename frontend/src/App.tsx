@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import TransactionTable from "./Transactiontable";
+import RuleManagement from './RuleManagement';
 import { login, logout, refreshToken, isTokenExpired, register } from "./auth"
 import axios from 'axios';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
 const API_URL = "http://localhost:3000/api/";
 const UPLOAD_URL = "http://localhost:3000/upload/";
@@ -141,14 +143,31 @@ const App: React.FC = () => {
   }
 
   return (
-    <div>
-      <h1>Upload CSV File</h1>
-      <input type="file" onChange={onFileChange} />
-      <button onClick={onFileUpload}>Upload!</button>
-      <h2>Transactions</h2>
-      <TransactionTable/>
-      <button onClick={handleLogout}>Logout</button>
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/rules">Manage Rules</Link></li>
+            <li><Link to="/transactions">Transactions</Link></li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/" element={
+            <>
+              <h1>Upload CSV File</h1>
+              <input type="file" onChange={onFileChange} />
+              <button onClick={onFileUpload}>Upload!</button>
+            </>
+          }/>
+          <Route path="/rules" element={<RuleManagement />} />
+          <Route path="/transactions" element={<TransactionTable />} />
+        </Routes>
+
+        <button onClick={handleLogout}>Logout</button>
+      </div>
+    </Router>
   );
 };
 

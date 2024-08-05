@@ -1,7 +1,6 @@
-from django.core.management.base import BaseCommand, django
+from django.core.management.base import BaseCommand
 from django.contrib.auth import get_user_model
 from django.conf import settings
-from django.db.models.functions import Random
 from storage.models import AdminRules, Tag
 import random
 import string
@@ -29,7 +28,7 @@ class Command(BaseCommand):
         if settings.DEBUG:
             self.stdout.write(self.style.SUCCESS(f'Admin Password: {admin_password}'))
 
-        json_file_path = os.path.join(settings.BASE_DIR, 'admin_tags.json')
+        json_file_path = os.path.join(settings.BASE_DIR, 'data', 'admin_tags.json')
         if os.path.exists(json_file_path):
             with open(json_file_path, 'r') as f:
                 data = json.load(f)  
@@ -37,8 +36,13 @@ class Command(BaseCommand):
                 tag, _ = Tag.objects.get_or_create(tag=item['tag'])
                 AdminRules.objects.get_or_create(
                     name=item['name'],
-                    pattern=item['pattern'],
-                 tag=tag,
+                    words=item['words'],
+                    match_method=item['match_method'],
+                    tag=tag,
+                    label=item.get('label'),
+                    metadata_type=item.get('metadata_type'),
+                    metadata_value=item.get('metadata_value'),
+                    auto_tag=item.get('auto_tag', True)
                 )   
             self.stdout.write(self.style.SUCCESS('Admin tags and rules imported successfully'))
         else:

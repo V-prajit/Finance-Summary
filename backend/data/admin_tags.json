@@ -1,0 +1,22 @@
+[
+    {
+        "name": "random",
+        "words": "Zelle payment",
+        "match_method": "exact",
+        "tag": "Zelle",
+        "label": null,
+        "metadata_type": "string_match",
+        "metadata_value": "Zelle",
+        "auto_tag": true
+    },
+    {
+        "name": "Arlington",
+        "words": "arlington",
+        "match_method": "all",
+        "tag": "Arlington",
+        "label": "Location",
+        "metadata_type": "string_match",
+        "metadata_value": "Arlington",
+        "auto_tag": true
+    }
+]

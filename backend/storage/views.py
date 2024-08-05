@@ -1,8 +1,11 @@
 from django.shortcuts import render
-from rest_framework import generics, viewsets
+from rest_framework import generics, viewsets, permissions
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from .models import Transaction, CustomRules, Tag, AdminRules
 from .serializers import TransactionSerializer, TransactionWithTagsSerializer, AdminRulesSerializer, CustomRulesSerializer, TagSerializer
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 class TransactionListView(generics.ListAPIView):
     serializer_class = TransactionSerializer
@@ -27,7 +30,12 @@ class TagViewSet(viewsets.ModelViewSet):
 class AdminRuleViewSet(viewsets.ModelViewSet):
     queryset = AdminRules.objects.all()
     serializer_class = AdminRulesSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [permissions.IsAdminUser]
+
+    def perform_create(self, serializer):
+        rule = serializer.save()
+        for user in User.objects.all():
+            Transaction.reanalyze_all_for_user(user)
 
 class CustomRuleViewSet(viewsets.ModelViewSet):
     serializer_class = CustomRulesSerializer
@@ -35,3 +43,7 @@ class CustomRuleViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return CustomRules.objects.filter(user=self.request.user)
+    
+    def perform_create(self, serializer):
+        rule = serializer.save(user=self.request.user)
+        Transaction.reanalyze_all_for_user(self.request.user)
