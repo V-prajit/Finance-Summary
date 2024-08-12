@@ -22,29 +22,38 @@ class TransactionWithTagsSerializer(serializers.ModelSerializer):
 
 class RuleSerializer(serializers.ModelSerializer):
     label_display = serializers.CharField(source='get_label_display', read_only=True)
-    tag = serializers.CharField()
+    tag = serializers.CharField(required=False, allow_blank = True)
     class Meta:
         fields = ['id', 'name', 'words', 'match_method', 'tag', 'label', 'label_display', 'metadata_type', 'metadata_value', 'auto_tag']
 
 
     def validate_tag(self, value):
-        tag, created = Tag.objects.get_or_create(tag=value)
-        return tag
-
+        if value:
+            tag, created = Tag.objects.get_or_create(tag=value)
+            return tag
+        return None 
 class AdminRulesSerializer(RuleSerializer):
     class Meta(RuleSerializer.Meta):
         model = AdminRules
 
     def create(self, validated_data):
-        tag = validated_data.pop('tag')
-        instance = AdminRules.objects.create(tag=tag, **validated_data)
+        tag = validated_data.pop('tag', None)
+        if tag:
+            tag_instance, _ = Tag.objects.get_or_create(tag=tag)
+            instance = AdminRules.objects.create(tag=tag, **validated_data)
+        else:
+            instance = AdminRules.objects.create(**validated_data)
         AdminRules.export_admin_tags()
         return instance
 
     def update(self, instance, validated_data):
         if 'tag' in validated_data:
             tag = validated_data.pop('tag')
-            instance.tag = tag
+            if tag:
+                tag_instance, _ = Tag.objects.get_or_create(tag=tag)
+                instance.tag = tag
+            else:
+                instance.tag = None
         for attr, value in validated_data.items():
             setattr(instance, attr, value)
         instance.save()

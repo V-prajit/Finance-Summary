@@ -71,7 +71,7 @@ class RuleBase(models.Model):
         ('any', 'Any word'),
         ('exact', 'Exact phrase')
     ])
-    tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
+    tag = models.ForeignKey(Tag, on_delete=models.CASCADE, null=True, blank=True)
     label = models.CharField(max_length=20, choices=LABEL_CHOICES, blank=True, null=True)
     metadata_key = models.CharField(max_length=100, blank=True, null=True)
     metadata_type = models.CharField(max_length=20, choices=[
@@ -108,7 +108,7 @@ class AdminRules(RuleBase):
                 'name': rule.name,
                 'words': rule.words,
                 'match_method': rule.match_method,
-                'tag': rule.tag.tag,
+                'tag': rule.tag.tag if rule.tag else None,
                 'label': rule.label,
                 'metadata_type': rule.metadata_type,
                 'metadata_value': rule.metadata_value,
