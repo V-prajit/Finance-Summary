@@ -146,7 +146,6 @@ const RuleManagement: React.FC = () => {
                     value={newRule.tag}
                     onChange={handleInputChange}
                     placeholder="Tag"
-                    required
                 />
                 <select
                     name="metadata_type"
