@@ -20,13 +20,13 @@
         "auto_tag": true
     },
     {
-        "name": "Zelle From",
-        "words": "zelle payment from",
+        "name": "Grapevine",
+        "words": "grapevine",
         "match_method": "exact",
-        "tag": null,
-        "label": "Person",
-        "metadata_type": "next_n_words",
-        "metadata_value": "2",
+        "tag": "Grapevine",
+        "label": "Location",
+        "metadata_type": "string_match",
+        "metadata_value": "Grapevine",
         "auto_tag": true
     }
 ]
