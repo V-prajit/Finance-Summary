@@ -58,7 +58,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     environment:
-      - REACT_APP_BACKEND_URL= /api
+      - REACT_APP_BACKEND_URL=/api
     networks:
       - financetracker-network
   
