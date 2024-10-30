@@ -18,7 +18,7 @@ class Command(BaseCommand):
         admin_password = "".join(
             random.choices(string.ascii_letters + string.digits, k=16)
         )
-
+        print(f"Creating/updating admin user with username: {admin_username}")
         admin_user, created = User.objects.get_or_create(username=admin_username)
         admin_user.set_password(admin_password)
         admin_user.is_staff = True

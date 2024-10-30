@@ -83,13 +83,18 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3002",
-    "http://127.0.0.1:3002",
-    "http://0.0.0.0:3002",
-    "http://localhost:3000",
+    "http://localhost",
+    "http://127.0.0.1:80",
+    "http://127.0.0.1",
+    "http://0.0.0.0:80",
+    "http://localhost:80",
+    "http://100.107.41.26",
+    "http://100.107.41.26:80"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_REPLACE_HTTPS_REFERER = False
 
 CORS_ALLOW_METHODS = [
     'DELETE',
@@ -109,9 +114,27 @@ CORS_ALLOW_HEADERS = [
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
+    'access-control-allow-origin',
+    'access-control-allow-headers',
 ]
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3002', 'http://127.0.0.1:3002', 'http://0.0.0.0:3002', 'http://localhost:3000']
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost",
+    "http://localhost:80",
+    "http://127.0.0.1",
+    "http://127.0.0.1:80",
+    "http://100.107.41.26",
+    "http://100.107.41.26:80"
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost',
+    'http://localhost:80',
+    'http://127.0.0.1',
+    'http://127.0.0.1:80',
+    'http://100.107.41.26',
+    'http://100.107.41.26:80'
+]
 
 
 ROOT_URLCONF = 'financetracker.urls'
