@@ -1,5 +1,17 @@
 version: '3'
 services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - financetracker-network
+
   db:
     image: postgres:16.3
     volumes:
@@ -26,10 +38,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    ports:
-      - "3000:3000"
     volumes:
-    #to be removed after development
       - ./backend:/app/
     environment:
       DATABASE_HOST: db
@@ -45,11 +54,11 @@ services:
       context: .
       dockerfile: Dockerfile-frontend
     container_name: financetracker-frontend
-    ports:
-      - "3002:3002"
     volumes:
       - ./frontend:/app
       - /app/node_modules
+    environment:
+      - REACT_APP_BACKEND_URL: /api
     networks:
       - financetracker-network
   
