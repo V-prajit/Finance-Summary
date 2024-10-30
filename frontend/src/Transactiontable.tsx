@@ -14,7 +14,7 @@ interface Transaction {
   structured_tags: Record<string, string>;
 }
 
-const API_URL = "http://localhost:3000/api/";
+const API_URL = "/api/";
 
 const TransactionTable: React.FC = () => {
   const [transactions, setTransactions] = useState<Transaction[]>([]);

@@ -9,7 +9,7 @@ const AddRuleForm: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/api/transactions/custon-rules/', {
+            const response = await axios.post('/api/transactions/custon-rules/', {
                 Name,
                 Pattern,
                 Tag

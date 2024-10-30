@@ -41,7 +41,7 @@ const RuleManagement: React.FC = () => {
         try {
             const endpoint = isAdmin ? 'admin-rules' : 'custom-rules';
             console.log("Fetching rules from endpoint:", endpoint);
-            const response = await axios.get(`http://localhost:3000/api/transactions/${endpoint}/`, {
+            const response = await axios.get(`/api/transactions/${endpoint}/`, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` }
             });
             setRules(response.data);
@@ -73,7 +73,7 @@ const RuleManagement: React.FC = () => {
         const endpoint = isAdmin ? 'admin-rules' : 'custom-rules';
         console.log("Using endpoint for submission:", endpoint);
         try {
-            const response = await axios.post(`http://localhost:3000/api/transactions/${endpoint}/`, newRule, {
+            const response = await axios.post(`/api/transactions/${endpoint}/`, newRule, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` }
             });
             console.log("Rule submission response:", response.data);
@@ -99,7 +99,7 @@ const RuleManagement: React.FC = () => {
         try {
             const endpoint = isAdmin ? 'admin-rules' : 'custom-rules';
             console.log(`Deleting rule ${id} from endpoint:`, endpoint);
-            await axios.delete(`http://localhost:3000/api/transactions/${endpoint}/${id}/`, {
+            await axios.delete(`/api/transactions/${endpoint}/${id}/`, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('access_token')}` }
             });
             fetchRules();

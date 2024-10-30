@@ -24,7 +24,7 @@ const AdminRuleForm: React.FC = () => {
 
   const fetchRules = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/transactions/admin-rules/', {
+      const response = await axios.get('/api/transactions/admin-rules/', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`
         }
@@ -43,7 +43,7 @@ const AdminRuleForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/transactions/admin-rules/', newRule, {
+      await axios.post('/api/transactions/admin-rules/', newRule, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`
         }
@@ -57,7 +57,7 @@ const AdminRuleForm: React.FC = () => {
 
   const handleDelete = async (id: number) => {
     try {
-      await axios.delete(`http://localhost:3000/api/transactions/admin-rules/${id}/`, {
+      await axios.delete(`/api/transactions/admin-rules/${id}/`, {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('access_token')}`
         }
