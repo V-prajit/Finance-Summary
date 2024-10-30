@@ -6,7 +6,7 @@ import { login, logout, refreshToken, isTokenExpired, register } from "./auth"
 import axios from 'axios';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 
-const API_URL = "/api/";
+const API_URL = "http://100.107.41.26/api/";
 const UPLOAD_URL = "/api/upload/";
 
 interface UploadData {

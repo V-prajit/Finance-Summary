@@ -16,8 +16,6 @@ services:
     image: postgres:16.3
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
     environment:
       POSTGRES_DB: financetracker
       POSTGRES_USER: financetracker
@@ -57,8 +55,6 @@ services:
     volumes:
       - ./frontend:/app
       - /app/node_modules
-    environment:
-      - REACT_APP_BACKEND_URL=/api
     networks:
       - financetracker-network
   
